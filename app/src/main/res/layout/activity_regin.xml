@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deng"
+    android:orientation="vertical"
+    tools:context=".regin.ReginActivity">
+
+    <EditText
+        android:id="@+id/regin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:hint="@string/regin_phone" />
+
+    <EditText
+        android:id="@+id/regin_yan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regin_name"
+        android:hint="@string/regin_yan" />
+
+    <EditText
+        android:id="@+id/regin_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regin_yan"
+        android:hint="@string/regin_pwd" />
+
+    <TextView
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regin_pwd"
+        android:layout_alignParentRight="true"
+        android:text="@string/yiyou" />
+
+    <Button
+        android:id="@+id/regin"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/you"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#ff5f71"
+        android:textSize="18sp"
+        android:text="@string/regin" />
+</RelativeLayout>

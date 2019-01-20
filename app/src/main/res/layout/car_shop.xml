@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/check_single"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/car_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/check_single"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/car_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/car_img"
+        android:layout_toRightOf="@id/car_img"
+        android:text="title" />
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/car_img"
+        android:layout_toRightOf="@id/car_img"
+        android:text="price"
+        android:textColor="#f00" />
+
+    <example.com.week03_moni.zidingyi.CustomAddview
+        android:layout_centerHorizontal="true"
+        android:id="@+id/car_shop_addordel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/car_price"
+        android:layout_below="@id/car_title"/>
+</RelativeLayout>
